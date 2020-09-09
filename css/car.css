@@ -1,0 +1,125 @@
+* {
+	margin: 0;padding: 0;box-sizing: border-box;
+}
+
+
+
+.a {
+	height: 100vh;width: 100%;
+	background-image: url('../img/sk.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.b {
+	height: 200px;
+	width: 400%;
+	display: block;
+	position: absolute;
+	background-image: url('../img/road.jpg');
+	background-size: cover;
+	bottom: 0;
+	left: 0;right: 0;
+	/*z-index: 1;*/
+	/*background-repeat: repeat-x;*/
+	animation: b 3s linear infinite;
+}
+@keyframes b {
+	100%{
+		transform: translateX(-3400px);
+	}
+}
+.c {
+	height: 250px;
+	width: 500%;
+	 background-image: url('building.png');
+	 position: absolute;
+
+	 bottom:200px;
+	 left: 0;
+	 right:0;
+	 display: block;
+	 /*z-index: 1;*/
+	 /*background-repeat: repeat-x;*/
+	 animation: c 2s ease-in infinite;
+}
+@keyframes c {
+	100%{
+		transform: translateX(-2400px);
+	}
+}
+.d {
+	width: 400px;
+	left: 10%;
+	bottom: 100px;
+	transform: translateX(-50%);
+	position: absolute;
+	/*z-index: 1;*/
+}
+.d img {
+	width: 120%;
+	animation: d 5s linear infinite;
+}
+@keyframes d {
+	100%{
+		transform: translateX(1300px);
+	}
+	/*100%{
+		transform: translateX(1300px);
+	}*/
+	/*0%{
+		transform: translateX(-1px);
+	}*/
+}
+.car {
+	animation: ca 1s linear infinite;
+}
+
+@keyframes ca {
+	100% {
+		transform: translateX(-300px);
+	}
+}
+.w {
+	left: 10%;
+	bottom: 178px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+}
+.w img {
+	width: 72px;
+	height: 72px;
+	animation: w 5s linear infinite ;
+}
+.back {
+	left: -120px;
+	top: -20px;
+	position: absolute;
+}
+.front {
+	left:140px;
+	top: -20px;
+	position: absolute;
+}
+@keyframes w {
+	100% {
+			transform: translateX(1300px) rotate(360deg) ;
+		 
+	}
+/*100%{
+		transform: translateX(1300px) rotate(360deg);
+	
+	}*/
+}
+/*@keyframes w {
+	100% {
+		
+		transform: translateX(10px);
+	}
+	
+	
+}
+*/
